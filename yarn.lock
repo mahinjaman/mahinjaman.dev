@@ -695,6 +695,18 @@
   dependencies:
     tslib "^2.8.0"
 
+"@tabler/icons-react@^3.36.1":
+  version "3.36.1"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.36.1.tgz#332d4407b5e2a9a783ce0a26567727aaedd5a9a8"
+  integrity sha512-/8nOXeNeMoze9xY/QyEKG65wuvRhkT3q9aytaur6Gj8bYU2A98YVJyLc9MRmc5nVvpy+bRlrrwK/Ykr8WGyUWg==
+  dependencies:
+    "@tabler/icons" ""
+
+"@tabler/icons@":
+  version "3.36.1"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.36.1.tgz#a893104b3c56e02458b13342abb6e466d4a81a8d"
+  integrity sha512-f4Jg3Fof/Vru5ioix/UO4GX+sdDsF9wQo47FbtvG+utIYYVQ/QVAC0QYgcBbAjQGfbdOh2CCf0BgiFOF9Ixtjw==
+
 "@tailwindcss/node@4.1.18":
   version "4.1.18"
   resolved "https://registry.yarnpkg.com/@tailwindcss/node/-/node-4.1.18.tgz#9863be0d26178638794a38d6c7c14666fb992e8a"
@@ -865,9 +877,9 @@
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
 "@types/node@^24.10.1":
-  version "24.10.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.10.4.tgz#9d27c032a1b2c42a4eab8fb65c5856a8b8e098c4"
-  integrity sha512-vnDVpYPMzs4wunl27jHrfmwojOGKya0xyM3sH+UE5iv5uPS6vX7UIoh6m+vQc5LGBq52HBKPIn/zcSZVzeDEZg==
+  version "24.10.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.10.7.tgz#516502e408f6d00afd230f291bfe3ad38105a73e"
+  integrity sha512-+054pVMzVTmRQV8BhpGv3UyfZ2Llgl8rdpDTon+cUH9+na0ncBVXj3wTUKh14+Kiz18ziM3b4ikpP5/Pc0rQEQ==
   dependencies:
     undici-types "~7.16.0"
 
@@ -877,9 +889,9 @@
   integrity sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==
 
 "@types/react@^19.2.5":
-  version "19.2.7"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.7.tgz#84e62c0f23e8e4e5ac2cadcea1ffeacccae7f62f"
-  integrity sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==
+  version "19.2.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.8.tgz#307011c9f5973a6abab8e17d0293f48843627994"
+  integrity sha512-3MbSL37jEchWZz2p2mjntRZtPt837ij10ApxKfgmXCTuHWagYg7iA5bqPw6C8BMPfwidlvfPI/fxOc42HLhcyg==
   dependencies:
     csstype "^3.2.2"
 
@@ -1029,9 +1041,9 @@ balanced-match@^1.0.0:
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
 baseline-browser-mapping@^2.9.0:
-  version "2.9.13"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.9.13.tgz#e1d39147f6a7492438131476026e705d816b10cb"
-  integrity sha512-WhtvB2NG2wjr04+h77sg3klAIwrgOqnjS49GGudnUPGFFgg7G17y7Qecqp+2Dr5kUDxNRBca0SK7cG8JwzkWDQ==
+  version "2.9.14"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.9.14.tgz#3b6af0bc032445bca04de58caa9a87cfe921cbb3"
+  integrity sha512-B0xUquLkiGLgHhpPBqvl7GWegWBUNuujQ6kXd/r1U38ElPT6Ok8KZ8e+FpUGEc2ZoRQUzq/aUnaKFc/svWUGSg==
 
 brace-expansion@^1.1.7:
   version "1.1.12"

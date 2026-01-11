@@ -5,6 +5,10 @@
 /* External styles */
 
 body{
-  background-color: #101828;
+  background-color: #000a1d;
   color: #b3b2b2;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,8 +1,8 @@
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+import PageLoader from "../components/loader/PageLoader";
 import "./App.css";
 import { Outlet, useNavigation } from "react-router-dom";
-import PageLoader from "./app/components/loader/PageLoader";
-import Header from "./app/components/header/Header";
-import Footer from "./app/components/footer/Footer";
 
 function App() {
   const navigation = useNavigation();

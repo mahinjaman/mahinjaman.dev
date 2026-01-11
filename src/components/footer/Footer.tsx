@@ -9,7 +9,7 @@ import { FaX } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-transparent text-gray-300 py-10">
       <div className="max-w-6xl mx-auto px-4 flex flex-col items-center space-y-4">
         {/* Links */}
         <div className="flex flex-wrap justify-center gap-6 text-sm">
