@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 
 import {
@@ -16,34 +16,12 @@ import type { IMenuItem } from "../../types";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    console.log(window.scrollY);
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   console.log(location.hash);
 
   return (
     <header
-      className={`${
-        isSticky
-          ? "sticky top-0 z-[9999] transition-colors duration-30 backdrop-blur-xl bg-orange-500/5 border-b border-orange-400/30"
-          : "bg-transparent"
-      } relative`}
+      className={`fixed w-full top-0 z-[9999] transition-colors duration-30 backdrop-blur-xl bg-orange-500/5 border-b border-orange-400/30`}
     >
       <nav className="mx-auto flex max-w-7xl relative items-center justify-between p-6 lg:px-8 z-50 bg-transparent">
         {/* Logo */}
