@@ -14,7 +14,7 @@ import GitHub from "../../assets/images/skills/github.png";
 import Figma from "../../assets/images/skills/figma.png";
 import Bootstrap from "../../assets/images/skills/bootstrap.png";
 
-const SkillSection = () => {
+const Skills = () => {
   const skills = [
     { name: "HTML5", icon: html },
     { name: "CSS3", icon: CSS3 },
@@ -56,7 +56,7 @@ const SkillSection = () => {
           </span>
         </div>
 
-        <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter italic">
           Technical <br /> <span className="text-orange-500">Arsenal</span>
         </h2>
 
@@ -179,4 +179,4 @@ const SkillSection = () => {
   );
 };
 
-export default SkillSection;
+export default Skills;

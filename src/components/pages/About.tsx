@@ -99,7 +99,7 @@ const About = () => {
           className="text-center mb-12"
         >
           <span className="text-primary font-mono">Get to know me</span>
-          <h2 className="text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-600">
+          <h2 className="italic text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-600">
             About Me
           </h2>
         </motion.div>

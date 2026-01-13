@@ -46,7 +46,7 @@ const Education = () => {
           <p className="text-orange-500 uppercase tracking-[0.3em] text-xs mb-3 font-mono">
             My Journey
           </p>
-          <h2 className="text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-600">
+          <h2 className="italic text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-600">
             Education
           </h2>
         </motion.div>
