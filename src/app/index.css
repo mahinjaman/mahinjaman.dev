@@ -98,7 +98,7 @@
   }
 
   body {
-    background-color: #000a1d !important; /* Maintain your specific dark blue */
+    background-color: #000000 !important; /* Maintain your specific dark blue */
     @apply bg-background text-foreground font-sans antialiased;
   }
 
@@ -118,7 +118,7 @@
   }
 
   .nav-link {
-    @apply text-muted-foreground hover:text-foreground transition-colors duration-300 relative;
+    @apply text-muted-foreground hover:text-foreground transition-colors duration-300 relative ;
   }
 
   .nav-link::after {

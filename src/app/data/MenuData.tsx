@@ -2,27 +2,23 @@ import type { IMenuItem } from "../../types";
 
 export const menuData:IMenuItem[] = [
     {
-        title: 'Home',
-        link: '#'
-    },
-    {
         title: "About",
-        link: '#'
+        link: '#about'
     },
     {
         title: "Education",
-        link: '#'
+        link: '#education'
     },
     {
         title: "Skills",
-        link: '#'
+        link: '#skills'
     },
     {
         title: "Projects",
-        link: '#'
+        link: '#project'
     },
     {
         title: "Contact",
-        link: '#'
+        link: '#contact'
     }
 ]

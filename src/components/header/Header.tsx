@@ -26,7 +26,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl relative items-center justify-between p-6 lg:px-8 z-50 bg-transparent">
         {/* Logo */}
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5">
             <h1 className="text-2xl font-bold text-orange-400">Mahin Jaman</h1>
           </a>
         </div>

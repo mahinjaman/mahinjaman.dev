@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden relative"
+      className="min-h-screen  flex items-center justify-center relative overflow-hidden"
     >
       {/* Floating dots */}
       <div className="floating-dot top-20 left-[10%] animate-pulse relative" />
@@ -24,7 +24,7 @@ const Hero = () => {
         style={{ animationDelay: "0.5s" }}
       />
 
-      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12 relative">
+      <div className="container px-6 flex flex-col lg:flex-row items-center justify-between gap-12 relative max-w-7xl mx-auto">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -185,13 +185,15 @@ const Hero = () => {
         transition={{ delay: 1, duration: 0.5 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-muted-foreground/50 rounded-full flex justify-center pt-2"
-        >
-          <div className="w-1 h-2 bg-primary rounded-full" />
-        </motion.div>
+        <a href={"#about"}>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="w-6 h-10 border-2 border-muted-foreground/50 rounded-full flex justify-center pt-2"
+          >
+            <div className="w-1 h-2 bg-primary rounded-full" />
+          </motion.div>
+        </a>
       </motion.div>
     </section>
   );
