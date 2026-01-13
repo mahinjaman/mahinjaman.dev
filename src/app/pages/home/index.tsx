@@ -1,4 +1,5 @@
 import About from "../../../components/pages/About";
+import Education from "../../../components/pages/Education";
 import Hero from "../../../components/pages/Hero";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div className="">
             <Hero />
             <About />
+            <Education />
         </div>
     );
 };
