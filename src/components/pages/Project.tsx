@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -43,7 +42,7 @@ const Projects = () => {
 
   return (
     <section
-      id="project"
+      id="projects"
       className=" text-white py-24 px-6 relative overflow-hidden font-mono"
     >
       {/* Background */}

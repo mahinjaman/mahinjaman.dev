@@ -1,4 +1,5 @@
 import About from "../../../components/pages/About";
+import ContactUs from "../../../components/pages/ContactUs";
 import Education from "../../../components/pages/Education";
 import FreelanceWork from "../../../components/pages/FreelanceWork";
 import Hero from "../../../components/pages/Hero";
@@ -14,6 +15,7 @@ const Home = () => {
             <Skills />
             <Projects />
             <FreelanceWork />
+            <ContactUs />
         </div>
     );
 };

@@ -1,31 +1,56 @@
 import { motion } from "framer-motion";
 import mahinPhoto from "../../assets/images/author/mahin_jaman.png";
-import background from "../../assets/images/background/background.jpg";
 import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen  flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative bg-transparent pt-20 lg:pt-0"
     >
-      {/* Floating dots */}
-      <div className="floating-dot top-20 left-[10%] animate-pulse relative" />
+      <div className="floating-dot absolute top-20 left-[10%] animate-pulse" />
       <div
-        className="floating-dot top-40 right-[15%] relative"
+        className="floating-dot absolute top-40 right-[15%]"
         style={{ animationDelay: "1s" }}
       />
       <div
-        className="floating-dot bottom-32 left-[20%] relative"
+        className="floating-dot absolute bottom-32 left-[20%]"
         style={{ animationDelay: "2s" }}
-      />
-      <div
-        className="floating-dot top-1/3 right-[25%] relative"
-        style={{ animationDelay: "0.5s" }}
       />
 
       <div className="container px-6 flex flex-col lg:flex-row items-center justify-between gap-12 relative max-w-7xl mx-auto">
-        {/* Left Content */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="flex-1 flex justify-center lg:justify-end order-first lg:order-last"
+        >
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full border-2 border-primary" />
+            <div className="absolute w-full h-full bg-orange-400/50 left-0 top-0 rounded-full border-2 border-primary backdrop-blur-lg" />
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-primary z-50">
+              <img
+                src={mahinPhoto}
+                alt="Mahin Jaman"
+                className="w-full h-full object-cover relative"
+              />
+            </div>
+            <div className="absolute w-full h-full bg-orange-400 blur-2xl top-0 left-0 animate-pulse rounded-full z-10"></div>
+
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+              className="absolute -top-5 -right-5 w-8 h-8 border-2 border-primary/50 rounded-full"
+            />
+
+            <motion.div
+              animate={{ rotate: -360 }}
+              transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
+              className="absolute -bottom-2 -left-2 w-6 h-6 bg-primary/20 rounded-full"
+            />
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -45,7 +70,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-5xl md:text-7xl font-bold font-display mt-2 mb-4 gradient-text italic"
+            className="text-4xl md:text-7xl font-bold font-display mt-2 mb-4 gradient-text italic"
           >
             Mahin Jaman
           </motion.h1>
@@ -54,7 +79,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4 "
+            className="text-xl md:text-2xl font-medium text-secondary-foreground mb-4"
           >
             Full Stack Developer<span className="text-primary">,</span>{" "}
             <span className="gradient-text">2 Years Experience</span>
@@ -64,7 +89,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="text-muted-foreground max-w-md mx-auto lg:mx-0 mb-8"
+            className="text-muted-foreground max-w-md mx-auto lg:mx-0 mb-8 px-4 lg:px-0"
           >
             Building scalable web applications with modern technologies.
             Passionate about clean code and exceptional user experiences.
@@ -91,7 +116,7 @@ const Hero = () => {
             className="flex gap-4 mt-8 justify-center lg:justify-start"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/mahinjaman"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all"
@@ -105,7 +130,7 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/mahin-jaman"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all"
@@ -115,7 +140,7 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              href="mailto:hello@mahinjaman.com"
+              href="mailto:mahinjaman01@gmail.com"
               className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all"
             >
               <svg
@@ -134,56 +159,14 @@ const Hero = () => {
             </a>
           </motion.div>
         </motion.div>
-
-        {/* Right Content - Photo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex-1 flex justify-center lg:justify-end"
-        >
-          <div className="relative">
-            {/* Glowing circle */}
-            <div className="absolute inset-0 rounded-full border-2 border-primary" />
-            <div className="absolute w-full h-full bg-orange-400/50  left-0 top-0 rounded-full border-2 border-primary backdrop-blur-lg" />
-            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-primary z-50">
-              <img
-                src={mahinPhoto}
-                alt="Mahin Jaman - Full Stack Developer"
-                className="w-full h-full object-cover relative"
-              />
-            </div>
-            <div className="absolute w-full h-full bg-orange-400 blur-2xl top-0 left-0 animate-pulse rounded-full z-10"></div>
-            {/* Decorative elements */}
-
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-              className="absolute -top-10 -right-10 w-8 h-8 border-2 border-primary/50 rounded-full animate-float"
-            />
-
-            <motion.div
-              animate={{ rotate: -360 }}
-              transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
-              className="absolute -bottom-2 -left-2 w-6 h-6 bg-primary/20 rounded-full animate-bounce"
-            />
-          </div>
-        </motion.div>
       </div>
 
-      <div className="w-full h-full absolute -z-10 opacity-30">
-        <img
-          src={background}
-          alt="background"
-          className="w-full h-full object-center "
-        />
-      </div>
-      {/* Scroll indicator */}
+      {/* Scroll effect icon */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="absolute -bottom-5 md:bottom-10 left-1/2 -translate-x-1/2"
       >
         <a href={"#about"}>
           <motion.div

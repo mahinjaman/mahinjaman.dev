@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const Education = () => {
@@ -74,7 +73,7 @@ const Education = () => {
                 ></div>
               </motion.div>
 
-              {/* Card Content with Framer Motion */}
+              {/* Card Content */}
               <motion.div 
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -151,7 +150,7 @@ const Education = () => {
                       </p>
                     </div>
 
-                    {/* HUD Decorative Element */}
+                    {/* Decorative Element */}
                     {edu.isCurrent && (
                       <motion.div 
                         initial={{ scaleX: 0 }}

@@ -15,7 +15,7 @@ export const menuData:IMenuItem[] = [
     },
     {
         title: "Projects",
-        link: '#project'
+        link: '#projects'
     },
     {
         title: "Contact",
