@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative bg-transparent pt-20 lg:pt-0"
+      className="md:min-h-[75vh] lg:min-h-180 xl:min-h-screen flex items-center justify-center relative bg-transparent pt-30 lg:pt-0"
     >
       <div className="floating-dot absolute top-20 left-[10%] animate-pulse" />
       <div
@@ -166,7 +166,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
-        className="absolute -bottom-5 md:bottom-10 left-1/2 -translate-x-1/2"
+        className="absolute -bottom-15 md:bottom-10 left-1/2 -translate-x-1/2"
       >
         <a href={"#about"}>
           <motion.div

@@ -34,7 +34,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen max-w-7xl mx-auto text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-20 overflow-hidden relative font-mono"
+      className=" max-w-7xl mx-auto text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-20 overflow-hidden relative font-mono"
     >
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"

@@ -31,7 +31,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="text-white py-20 px-4 min-h-screen font-sans bg-transparent overflow-hidden" id="education">
+    <div className="text-white py-10 px-4  font-sans bg-transparent overflow-hidden" id="education">
       <div className="max-w-5xl mx-auto">
         
         {/* Header Section with Fade In Down */}

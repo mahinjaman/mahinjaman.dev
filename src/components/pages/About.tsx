@@ -90,7 +90,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-24 relative !!bg-red-100 max-w-7xl mx-auto overflow-x-hidden overflow-y-visible md:overflow-visible " ref={ref}>
+    <section id="about" className="py-24 relative !!bg-red-100 max-w-7xl mx-auto overflow-x-hidden overflow-y-visible xl:overflow-visible " ref={ref}>
       <div className="container mx-auto px-6 relative z-50">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
