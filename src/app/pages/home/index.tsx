@@ -1,10 +1,10 @@
-import About from "../../../components/pages/About";
-import ContactUs from "../../../components/pages/ContactUs";
-import Education from "../../../components/pages/Education";
-import FreelanceWork from "../../../components/pages/FreelanceWork";
-import Hero from "../../../components/pages/Hero";
-import Projects from "../../../components/pages/Project";
-import Skills from "../../../components/pages/Skills";
+import About from "../../../components/pages/Home/About";
+import ContactUs from "../../../components/pages/Home/ContactUs";
+import Education from "../../../components/pages/Home/Education";
+import FreelanceWork from "../../../components/pages/Home/FreelanceWork";
+import Hero from "../../../components/pages/Home/Hero";
+import Projects from "../../../components/pages/Home/Project";
+import Skills from "../../../components/pages/Home/Skills";
 
 const Home = () => {
     return (

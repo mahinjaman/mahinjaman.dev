@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 
-import html from "../../assets/images/skills/html.png";
-import CSS3 from "../../assets/images/skills/css.png";
-import JavaScript from "../../assets/images/skills/javascript.png";
-import ReactJS from "../../assets/images/skills/react.png";
-import Tailwind from "../../assets/images/skills/tailwind.png";
-import NodeJS from "../../assets/images/skills/nodejs.png";
-import Python from "../../assets/images/skills/python.png";
-import MongoDB from "../../assets/images/skills/mongodb.png";
-import MySQL from "../../assets/images/skills/mysql.png";
-import Firebase from "../../assets/images/skills/firebase.png";
-import GitHub from "../../assets/images/skills/github.png";
-import Figma from "../../assets/images/skills/figma.png";
-import Bootstrap from "../../assets/images/skills/bootstrap.png";
+import html from "../../../assets/images/skills/html.png";
+import CSS3 from "../../../assets/images/skills/css.png";
+import JavaScript from "../../../assets/images/skills/javascript.png";
+import ReactJS from "../../../assets/images/skills/react.png";
+import Tailwind from "../../../assets/images/skills/tailwind.png";
+import NodeJS from "../../../assets/images/skills/nodejs.png";
+import Python from "../../../assets/images/skills/python.png";
+import MongoDB from "../../../assets/images/skills/mongodb.png";
+import MySQL from "../../../assets/images/skills/mysql.png";
+import Firebase from "../../../assets/images/skills/firebase.png";
+import GitHub from "../../../assets/images/skills/github.png";
+import Figma from "../../../assets/images/skills/figma.png";
+import Bootstrap from "../../../assets/images/skills/bootstrap.png";
 
 const Skills = () => {
   const skills = [
@@ -89,9 +89,13 @@ const Skills = () => {
           </div>
         </div>
 
-        <button className="mt-4 px-8 py-3 bg-orange-500 text-black font-black rounded-sm hover:bg-orange-400 transition-all shadow-[0_0_20px_rgba(249,115,22,0.3)] uppercase text-sm tracking-widest">
+        <a
+          className="mt-4 px-8 py-3 bg-orange-500 text-black font-black rounded-sm hover:bg-orange-400 transition-all shadow-[0_0_20px_rgba(249,115,22,0.3)] uppercase text-sm tracking-widest"
+          href="/src/assets/images/author/mahin_jaman.pdf"
+          download="Mahin_Jaman_CV.pdf"
+        >
           Download CV
-        </button>
+        </a>
       </motion.div>
 
       <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] flex items-center justify-center mt-20 md:mt-0">

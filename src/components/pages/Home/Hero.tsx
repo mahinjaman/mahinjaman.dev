@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import mahinPhoto from "../../assets/images/author/mahin_jaman.png";
-import { Button } from "../ui/button";
+import mahinPhoto from "../../../assets/images/author/mahin_jaman.png";
+import { Button } from "../../ui/button";
 
 const Hero = () => {
   return (
