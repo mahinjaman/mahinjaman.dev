@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CV = () => {
   return (
     <div className="bg-white p-8 md:p-16 max-w-[800px] mx-auto text-gray-800 font-sans shadow-lg my-10 border-t-8 border-orange-500">
