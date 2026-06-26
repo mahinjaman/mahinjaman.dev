@@ -1,7 +1,8 @@
 import About from "../../../components/pages/Home/About";
+import BlogSection from "../../../components/pages/Home/BlogSection";
 import ContactUs from "../../../components/pages/Home/ContactUs";
 import Education from "../../../components/pages/Home/Education";
-import FreelanceWork from "../../../components/pages/Home/FreelanceWork";
+import ExperienceSection from "../../../components/ExperienceSection";
 import Hero from "../../../components/pages/Home/Hero";
 import Projects from "../../../components/pages/Home/Project";
 import Skills from "../../../components/pages/Home/Skills";
@@ -14,7 +15,8 @@ const Home = () => {
             <Education />
             <Skills />
             <Projects />
-            <FreelanceWork />
+            <ExperienceSection />
+            <BlogSection />
             <ContactUs />
         </div>
     );

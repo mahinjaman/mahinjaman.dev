@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import {
   IconMenu2,
@@ -36,12 +37,12 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* LOGO */}
         <div className="flex lg:flex-1 items-center gap-2 group">
-          <a href="#" className="overflow-hidden">
+          <Link to="/" className="overflow-hidden">
             <h1 className="text-xl font-black text-white tracking-tighter uppercase px-1">
               Mahin <span className="text-orange-500 italic">Jaman</span>
             </h1>
             <div className="h-[1px] w-0 bg-orange-500 group-hover:w-full transition-all duration-500"></div>
-          </a>
+          </Link>
         </div>
 
         {/* MOBILE MENU BUTTON */}
@@ -57,21 +58,30 @@ export default function Header() {
         {/* DESKTOP MENU */}
         <div className="hidden lg:flex lg:items-center lg:gap-x-12">
           <PopoverGroup className="flex gap-x-8">
-            {menuData.map((item: IMenuItem) => (
-              <a
-                key={item.title}
-                href={item.link ?? "#"}
-                className="relative text-[11px] font-bold text-gray-400 hover:text-orange-500 transition uppercase tracking-[0.2em] group"
-              >
-                <span className="opacity-0 group-hover:opacity-100 mr-1 transition-opacity text-orange-500">
-                  [
-                </span>
-                {item.title}
-                <span className="opacity-0 group-hover:opacity-100 ml-1 transition-opacity text-orange-500">
-                  ]
-                </span>
-              </a>
-            ))}
+            {menuData.map((item: IMenuItem) => {
+              const linkClass =
+                "relative text-[11px] font-bold text-gray-400 hover:text-orange-500 transition uppercase tracking-[0.2em] group";
+              const inner = (
+                <>
+                  <span className="opacity-0 group-hover:opacity-100 mr-1 transition-opacity text-orange-500">
+                    [
+                  </span>
+                  {item.title}
+                  <span className="opacity-0 group-hover:opacity-100 ml-1 transition-opacity text-orange-500">
+                    ]
+                  </span>
+                </>
+              );
+              return item.route ? (
+                <Link key={item.title} to={item.link} className={linkClass}>
+                  {inner}
+                </Link>
+              ) : (
+                <a key={item.title} href={item.link ?? "#"} className={linkClass}>
+                  {inner}
+                </a>
+              );
+            })}
           </PopoverGroup>
 
           {/* SOCIAL UPLINKS */}
@@ -144,19 +154,32 @@ export default function Header() {
 
                 {/* Menu Links */}
                 <div className="space-y-6">
-                  {menuData.map((item: IMenuItem) => (
-                    <a
-                      key={item.title}
-                      href={item.link ?? "#"}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="block group"
-                    >
-                      
+                  {menuData.map((item: IMenuItem) => {
+                    const label = (
                       <div className="text-xl font-bold text-white group-hover:text-orange-500 transition-colors uppercase tracking-tighter">
                         {item.title}
                       </div>
-                    </a>
-                  ))}
+                    );
+                    return item.route ? (
+                      <Link
+                        key={item.title}
+                        to={item.link}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block group"
+                      >
+                        {label}
+                      </Link>
+                    ) : (
+                      <a
+                        key={item.title}
+                        href={item.link ?? "#"}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block group"
+                      >
+                        {label}
+                      </a>
+                    );
+                  })}
                 </div>
 
                 {/* Mobile Footer */}

@@ -1,14 +1,10 @@
 import { useEffect } from "react";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import PageLoader from "../components/loader/PageLoader";
 import "./App.css";
-import { Outlet, useNavigation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const navigation = useNavigation();
-  const isLoading = navigation.state === "loading";
-
   useEffect(() => {
     const handleContextMenu = (e:MouseEvent) => e.preventDefault();
     const handleKeyDown = (e:KeyboardEvent) => {
@@ -35,7 +31,6 @@ function App() {
   return (
     <>
       <Header />
-      <PageLoader isLoading={isLoading} />
       <Outlet />
       <Footer />
     </>
